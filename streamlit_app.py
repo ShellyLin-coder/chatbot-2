@@ -67,7 +67,7 @@ with st.sidebar:
     st.markdown("---")
     
     gemini_api_key = st.secrets["api_keys"]["gemini"]
-    st.markdown("[Get Gemini API Key](https://makersuite.google.com/app/apikey)")
+    
 
 if "page" not in st.session_state:
     st.session_state.page = "Chatbot"
