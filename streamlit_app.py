@@ -65,7 +65,8 @@ with st.sidebar:
             if page_id != "Dashboard":
                 st.session_state.authenticated = False
     st.markdown("---")
-    gemini_api_key = st.text_input("🔐 Gemini API Key", type="password", key="gemini_api")
+    
+    gemini_api_key = st.secrets["api_keys"]["gemini"]
     st.markdown("[Get Gemini API Key](https://makersuite.google.com/app/apikey)")
 
 if "page" not in st.session_state:
@@ -77,7 +78,7 @@ selected_page = st.session_state.page
 if selected_page == "Chatbot":
     col1, col2 = st.columns([9, 1])
     with col2:
-        st.image("Soultalk logo.png", width=120)
+        st.image("Soultalk logo.png", width=130)
     st.title("🌸 Welcome to SoulTalk")
     st.caption('Your Mental Wellness Buddy - Powered by Google Gemini and DistilBERT')
 
