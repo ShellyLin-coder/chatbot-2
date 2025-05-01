@@ -66,6 +66,7 @@ with st.sidebar:
                 st.session_state.authenticated = False
     st.markdown("---")
     
+    st.warning("⚠️ *Note: For tonight's presentation, the Gemini API key is preloaded for demo purposes. Please update the API key to request user input in future versions.*")
     gemini_api_key = st.secrets["api_keys"]["gemini"]
     
 
