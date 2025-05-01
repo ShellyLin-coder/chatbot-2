@@ -1,2 +1,13 @@
 streamlit
-openai
+google-generativeai
+transformers
+torch
+pandas
+numpy
+matplotlib
+altair
+wordcloud
+nltk
+scikit-learn        # Optional: metrics or preprocessing
+python-dotenv       # Optional: if you want to load API keys securely from .env files
+joblib
