@@ -66,8 +66,8 @@ with st.sidebar:
                 st.session_state.authenticated = False
     st.markdown("---")
     
-    st.warning("⚠️ *Note: For tonight's presentation, the Gemini API key is preloaded for demo purposes. Please update the API key to request user input in future versions.*")
-    gemini_api_key = st.secrets["api_keys"]["gemini"]
+    gemini_api_key = st.text_input("🔐 Gemini API Key", type="password", key="gemini_api")
+    st.markdown("[Get Gemini API Key](https://makersuite.google.com/app/apikey)")
     
 
 if "page" not in st.session_state:
